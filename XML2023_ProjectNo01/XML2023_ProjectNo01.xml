@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" imgRef="XML2023_ProjectNo01.xsl"?>
+
+<!DOCTYPE hotelCatalog SYSTEM "XML2023_ProjectNo01.dtd" [
+	<!ENTITY e_hiltonSofia SYSTEM "hotelPictures/hiltonSofia.jpg" NDATA jpg>
+	<!ENTITY e_innUSA SYSTEM "hotelPictures/innUSA.jpg" NDATA jpg>
+	<!ENTITY e_atlDubai SYSTEM "hotelPictures/atlDubai.jpg" NDATA jpg>
+	<!ENTITY e_omnia SYSTEM "hotelPictures/omnia.jpg" NDATA jpg>
+	<!ENTITY e_innBG SYSTEM "hotelPictures/innBG.jpg" NDATA jpg>
+	<!ENTITY e_waikiki SYSTEM "hotelPictures/waikiki.jpg" NDATA jpg>
+	<!ENTITY e_hDjo SYSTEM "hotelPictures/hDjo.jpg" NDATA jpg>
+	<!ENTITY e_jumeir SYSTEM "hotelPictures/jumeir.jpg" NDATA jpg>
+]>
+
+<hotelCatalog>
+	<regions>
+		<region regID="BG" hotelRef="HilSof InnBG Djog">
+            България
+        </region>
+		<region regID="USA" hotelRef="InnUSA Waikiki">
+            Съединени Американски Щати
+        </region>
+		<region regID="UAE" hotelRef="AtlDubai Jumeirah">
+            Обединени Арабски Емирства
+        </region>
+		<region regID="CH" hotelRef="Omnia">
+            Швейцария
+        </region>
+	</regions>
+
+	<chains>
+		<chain chainID="Hil" hotelRef="HilSof Waikiki Jumeirah">
+            Hilton
+        </chain>
+		<chain chainID="Inn" hotelRef="InnUSA InnBG">
+            Hotel Inn
+        </chain>
+	</chains>
+
+	<hotels>
+		<hotel hotelID="HilSof" regRef="BG" chainRef="Hil">
+			<name>
+                Hilton Sofia
+            </name>
+			<address>
+				<city>Sofia</city>
+				<street>Bulgaria Blvd. 1</street>
+			</address>
+			<contacts>
+				<site>www.hilton.com/en/hotels/sofhihi-hilton-sofia</site>
+				<email>sofia.information@hilton.com</email>
+				<phone>+359 2 933 5000</phone>
+				<facebook>Hilton Sofia</facebook>
+				<instagram>@hilton.sofia</instagram>
+			</contacts>
+			<stars>5-star</stars>
+			<description>
+                Този елегантен бизнес хотел с гледки към планината Витоша се намира на 6 минути 
+                пеша от метростанция и на 11 минути пеша от Националния дворец на културата.
+                В луксозните стаи и апартаменти има достъп до Wi-Fi, телевизор с плосък екран, 
+                бюро, минибар и кафемашина. Някои от по-луксозните опции за настаняване предлагат 
+                планински гледки и/или достъп до салон. На разположение е денонощно обслужване по стаите.
+                Изискан ресторант с международна кухня предлага планински гледки. 
+                На разположение е също кафе/бар. Допълнителните удобства включват вътрешен басейн, 
+                денонощна фитнес зала, спа център, бизнес център, 8 стаи за срещи и салон.
+            </description>
+			<image imgRef="e_hiltonSofia"/>
+		</hotel>
+		<hotel hotelID="InnUSA" regRef="USA" chainRef="Inn">
+			<name>
+                Holiday Inn &amp; Suites Orlando SW - Celebration Area, an IHG Hotel
+            </name>
+			<address>
+				<city>Kissimmee, FL</city>
+				<street>W Irlo Bronson Memorial Hwy</street>
+			</address>
+			<contacts>
+				<site>linktr.ee/HolidayInnSuitesOrlando</site>
+				<email>reservations@hicelebration.com</email>
+				<phone>+1 407-396-4222</phone>
+				<facebook>Holiday Inn &amp; Suites Orlando SW - Celebration Area</facebook>
+				<instagram>@holidayinnsuitesinternational</instagram>
+			</contacts>
+			<stars>3-star</stars>
+			<description>
+                В стаите има климатик, централно отопление и санитарен възел. Повечето стаи осигуряват изглед навън, 
+                благодарение на прилежащия балкон. Застланите с мокет стаи разполагат с двойно легло или
+                легло с кралски размер. За най-малките посетители са налице бебешки кошарки. Освен това могат да се ползват сейф, 
+                минибар и писалище. За приятния престой на гостите са осигурени хладилник, микровълнова фурна и машина за приготвяне 
+                на чай или кафе. Към допълнителните удобства спада комплект ютия с дъска за гладене. Пълноценната почивка се 
+                гарантира от достъп до интернет, телефон, телевизор, радио и безжичен интернет. Към оборудването на санитарните 
+                възли спадат душ и вана. Като допълнително удобство има сешоар. Хотелът предлага фамилна стая и стаи за непушачи.
+                Хотелската база с удоволствие посреща гостите в общо 444 стаи. С асансьор се достига до повечето етажи. 
+				Към удобствата спадат гардероб, съхранение на багаж, сейф и банкомат.
+            </description>
+			<image imgRef="e_innUSA"/>
+		</hotel>
+		<hotel hotelID="AtlDubai" regRef="UAE">
+			<name>
+                Atlantis, The Palm
+            </name>
+			<address>
+				<city>Dubai</city>
+				<street>Crescent Rd - The Palm Jumeirah</street>
+			</address>
+			<contacts>
+				<site>www.atlantis.com/atlantis-the-palm</site>
+				<email>info@atlantisthepalm.com</email>
+				<phone>+971 4 426 2000</phone>
+				<fax>888-205-7322</fax>
+				<instagram>@atlantisthepalm</instagram>
+			</contacts>
+			<stars>5-star</stars>
+			<description>
+                Сгушен между спокойните тюркоазени води на Арабския залив и величествения силует на Дубай, 
+                Atlantis, The Palm е короната на световноизвестния Palm Island в Дубай. От момента, в който 
+                пристигнете, ще се потопите в нови преживявания, които никога не сте могли дори да си представите. 
+                Търсачите на силни усещания могат да се насладят на безплатен достъп до Aquaventure Waterpark, 
+                най-големият воден парк в света, по време на престоя си. Също така е гласуван за воден парк номер 1 
+                на TripAdvisor с над 105 атракции. Гостите могат да се възползват максимално от безкрайното слънце 
+                на Дубай и да прекарат дните си край басейна или да релаксират на девствен частен плаж. Удивете се, 
+                докато гледате на 65, 000 невероятни морски животни в The Lost Chambers Aquarium, който оживява мита 
+                за Атлантида през лабиринт от подземни тунели. Любителите на храната могат да се насладят на 32 ресторанта 
+                и бара; никъде другаде по света няма да намерите толкова много известни готвачи и печелили награди 
+                ресторанти в една дестинация.
+            </description>
+			<image imgRef="e_atlDubai"/>
+		</hotel>
+		<hotel hotelID="Omnia" regRef="CH">
+			<name>
+                The Omnia Hotel - Zermatt
+            </name>
+			<address>
+				<city>Zermatt</city>
+				<street>Auf dem Fels, 3920</street>
+			</address>
+			<contacts>
+				<site>www.the-omnia.com</site>
+				<email>info@the-omnia.com</email>
+				<phone>+41 27 966 71 71</phone>
+				<fax>+41 27 966 71 00</fax>
+				<facebook>THE OMNIA</facebook>
+				<instagram>@omnia.zermatt</instagram>
+			</contacts>
+			<stars>5-star</stars>
+			<description>
+                Повечето стаи осигуряват изглед навън, благодарение на прилежащия балкон. Стаите притежават мини-хладилник, 
+                сейф и безжичен интернет. Хотелът предлага фамилна стая и стаи за непушачи. Гостите ще се почувстват комфортно 
+                във всяка една от наличните 30 стаи. Удобствата включват ресторант, зала за хранене, бар, обслужване по стаите 
+                и конферентна зала.
+            </description>
+			<image imgRef="e_omnia"/>
+		</hotel>
+		<hotel hotelID="InnBG" regRef="BG" chainRef="Inn">
+			<name>
+                Holiday Inn Plovdiv – Business Hotel
+            </name>
+			<address>
+				<city>Plovdiv</city>
+				<street>ул. „Васил Левски“ 109</street>
+			</address>
+			<contacts>
+				<site>www.ihg.com/holidayinn/hotels/gb/en/plovdiv/pdvhi/hoteldetail</site>
+				<email>marketing@hiplovdivhotel.com, info@hiplovdivhotel.com</email>
+				<phone>032 203 333</phone>
+				<facebook>@HolidayInnPlovdiv</facebook>
+				<instagram>@holidayinn</instagram>
+			</contacts>
+			<stars>4-star</stars>
+			<description>
+                Този функционален хотел е разположен в модерна сграда до главен път. Той се намира на 2 км от 
+                Археологическия музей и на 3 км от Античния стадион на Филипопол.
+                Цветните стаи предлагат безплатен достъп до Wi-Fi, телевизор с плосък екран, минибар и оборудване 
+                за приготвяне на чай и кафе На разположение е обслужване по стаите.
+                Хотелът предлага безплатна закуска. На разположение е непретенциозен ресторант, предлагащ обяд и вечеря. 
+                Другите удобства включват фитнес зала, спа център и салон за красота. Хотелът разполага и с големи зали 
+                удобни за провеждане на конференции и семинари. Ако търсите хотел с бизнес насока - това е мястото.
+            </description>
+			<image imgRef="e_innBG"/>
+		</hotel>
+		<hotel hotelID="Waikiki" regRef="USA" chainRef="Hil">
+			<name>
+                Hilton Hawaiian Village Waikiki Beach Resort
+            </name>
+			<address>
+				<city>Honolulu, Hawaii</city>
+				<street>2005 Kalia Road</street>
+			</address>
+			<contacts>
+				<site>www.hilton.com/en/hotels/hnlhvhh-hilton-hawaiian-village-waikiki-beach-resort</site>
+				<email>reservations@hiltonwaikikihotel.com</email>
+				<phone>+1 808-949-4321, + 1 (808) 922-0811</phone>
+				<facebook>Hilton Hawaiian Village Waikiki Beach Resort</facebook>
+				<instagram>@hiltonhawaiianvillage</instagram>
+			</contacts>
+			<stars>4-star</stars>
+			<description>
+                Предлагат се стаи с климатик, централно отопление, кухненски бокс и санитарен възел. Повечето стаи осигуряват 
+                изглед навън, благодарение на прилежащия балкон. За приятната атмосфера на много от хотелските единици 
+                допринася и красивата морска гледка. Застланите с мокет стаи разполагат с двойно легло или легло с кралски размер. 
+                Освен това могат да се ползват сейф, минибар и писалище. Предоставени са също хладилник и машина за приготвяне 
+                на чай или кафе. Към допълнителните удобства спада комплект ютия с дъска за гладене. Малки екстри, сред които 
+                достъп до интернет, телефон, телевизор, радио и безжичен интернет, гарантират приятен престой. 
+            </description>
+			<image imgRef="e_waikiki"/>
+		</hotel>
+		<hotel hotelID="Djog" regRef="BG">
+			<name>
+                Х. Джоголанов
+            </name>
+			<address>
+				<city>Копровщица</city>
+				<street>Bul. Hadzhi Nencho Palaveev 89</street>
+			</address>
+			<contacts>
+				<site>www.gogolanovahouse.com</site>
+				<email>mailkopri.dk@gmail.com</email>
+				<phone>088 855 0996</phone>
+				<facebook>@gunatrendafil55</facebook>
+			</contacts>
+			<stars>2-star</stars>
+			<description>
+                Семеен Хотел Джоголанова Къща се намира в китното градче Копривщица, 
+                на няколко крачки от главната улица. Хотелът ще Ви посрещне с характерния за 
+                Копривщица стил и модерни стаи, както и ще Ви осигури спокойна и пълноценна почивка. 
+                Предоставя безплатен Wi-Fi в целия имот. Центърът на град Копривщица е на 1 км, а София е на 110 км.
+            </description>
+			<image imgRef="e_hDjo"/>
+		</hotel>
+		<hotel hotelID="Jumeirah" regRef="UAE" chainRef="Hil">
+			<name>
+                Hilton Dubai Jumeirah
+            </name>
+			<address>
+				<city>Dubai</city>
+				<street>Tower A The Walk, Jumeirah Beach Residence</street>
+			</address>
+			<contacts>
+				<site>www.palmjumeirah.hilton.com</site>
+				<email>Jumeirah_Info@Hilton.com</email>
+				<phone>04 318 2999</phone>
+				<facebook>Hilton Dubai Jumeirah &amp; Hilton Dubai The Walk</facebook>
+				<instagram>@hiltondubaipalm</instagram>
+			</contacts>
+			<stars>5-star</stars>
+			<description>
+                DoubleTree by Hilton Dubai Jumeirah Beach се намира на алеята The Walk в комплекс Jumeirah Beach Residence (JBR), 
+                само на няколко крачки от търговския център The Beach Mall, който е предпочитано място за хранене и развлечения 
+                край брега на морето в Дубай. При пристигане любезният персонал посреща гостите с топли шоколадови бисквити DoubleTree. 
+                Този луксозен хотел само със суити предлага частен достъп до плажа, плажни шатри и собствен басейн. 
+                Всички суити включват отделна дневна и самостоятелен балкон с изглед към Арабско море или яхтеното пристанище на Дубай.
+                Гостите могат да започнат деня си с международна закуска на шведска маса в спокойния ресторант Gastro Kitchen, 
+                последвана от лек обяд или студено питие в бар Areia край басейна.
+            </description>
+			<image imgRef="e_jumeir"/>
+		</hotel>
+	</hotels>
+</hotelCatalog>

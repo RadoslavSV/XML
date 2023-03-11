@@ -1,0 +1,40 @@
+<!ELEMENT hotelCatalog (regions, chains, hotels)>
+
+<!ELEMENT regions (region+)>
+<!ELEMENT region (#PCDATA)>
+<!ATTLIST region regID ID #REQUIRED>
+<!ATTLIST region hotelRef IDREFS #REQUIRED>
+
+<!ELEMENT chains (chain+)>
+<!ELEMENT chain (#PCDATA)>
+<!ATTLIST chain chainID ID #REQUIRED>
+<!ATTLIST chain hotelRef IDREFS #REQUIRED>
+
+<!ELEMENT hotels (hotel+)>
+<!ELEMENT hotel (name, address, contacts, stars, description, image)>
+
+<!ATTLIST hotel hotelID ID #REQUIRED>
+<!ATTLIST hotel regRef IDREFS #REQUIRED>
+<!ATTLIST hotel chainRef IDREFS #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT address (city, street)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+
+<!ELEMENT contacts (site, email+, phone+, fax*, facebook?, instagram?)>
+<!ELEMENT site (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT facebook (#PCDATA)>
+<!ELEMENT instagram (#PCDATA)>
+
+<!ELEMENT stars (#PCDATA)>
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image imgRef ENTITY #REQUIRED>
+<!NOTATION jpg PUBLIC "jpg">
